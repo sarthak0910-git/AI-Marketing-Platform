@@ -1,9 +1,10 @@
 import axios from "axios";
 
-const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000";
-
+// In production the frontend is served by the same Express server,
+// so /api is always on the same origin — no absolute URL needed.
+// In development Vite proxies /api -> http://localhost:5000 (see vite.config.js).
 const api = axios.create({
-  baseURL: `${API_URL}/api`,
+  baseURL: "/api",
 });
 
 // Automatically attach JWT token

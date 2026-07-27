@@ -1,10 +1,10 @@
 services:
   - type: web
-    name: ai-marketing-backend
+    name: ai-marketing-platform
     runtime: node
-    rootDir: backend
-    buildCommand: npm install
-    startCommand: node server.js
+    # Root is the repo root — NOT backend/
+    buildCommand: npm install && npm run build && npm run install:backend
+    startCommand: npm start
     envVars:
       - key: NODE_ENV
         value: production
