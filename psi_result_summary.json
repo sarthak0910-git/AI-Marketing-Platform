@@ -1,0 +1,19 @@
+{
+  "url": "https://openai.com",
+  "fetchedAt": "2026-07-19T16:01:11.544Z",
+  "scores": {
+    "seo": 100,
+    "performance": 45,
+    "accessibility": 100,
+    "bestPractices": 100,
+    "desktopPerf": 73
+  },
+  "coreWebVitals": {
+    "lcp": "66.6 s",
+    "tbt": "500 ms",
+    "cls": "0",
+    "fcp": "4.0 s",
+    "ttfb": "Root document took 30 ms",
+    "si": "13.1 s"
+  }
+}
