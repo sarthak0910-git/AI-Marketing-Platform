@@ -27,3 +27,11 @@ dist-ssr
 .env
 .env.*
 !.env.example
+
+# Backend — deployed separately on Render, not part of the Vercel frontend
+backend/
+render.yaml
+
+# Dev/test scripts not needed in production
+test_psi.cjs
+psi_result_summary.json
